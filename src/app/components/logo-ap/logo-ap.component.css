@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#3E8FCC;
+}
+img{
+    width: 150px;
+}
+
+#Logo{
+    width: 40px;
+    border-radius: 20%;
+    margin-left: 4px;
+}
+
+.Redes{
+    display: flex;
+}
+
+button{
+    margin-left: 20px;
+}
+
+
+

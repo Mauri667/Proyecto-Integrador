@@ -1,0 +1,15 @@
+.container{
+    padding: 20px;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E2E4F1;
+    border-radius: 19px;
+    border: solid #9D9EA4;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+}

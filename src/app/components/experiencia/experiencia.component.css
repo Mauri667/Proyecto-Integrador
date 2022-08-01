@@ -1,0 +1,30 @@
+.row{
+    padding: 20px;
+}
+h4{
+   margin-top: 15px;
+}
+p{
+    margin-top: 15px;
+    color: grey;
+}
+
+#LogoCoto{
+    width: 15%;
+    float: right;
+    position: relative;
+    bottom: 63px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E2E4F1;
+    border-radius: 19px;
+    border: solid #9D9EA4;
+}
+
+h1{
+    margin: 20px;
+}
+

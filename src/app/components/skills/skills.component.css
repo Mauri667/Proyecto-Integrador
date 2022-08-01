@@ -1,0 +1,15 @@
+.row{
+    display: flex;
+    align-items: center;
+    background-color: #E2E4F1;
+    border-radius: 19px;
+    border: solid #9D9EA4;
+}
+.container{
+    display: flex;
+    align-content: center;
+}
+
+#progreso{
+    text-align: center;
+}

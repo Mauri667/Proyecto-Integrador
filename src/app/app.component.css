@@ -1,0 +1,6 @@
+.container-fluid{
+    font-family: "Lato",sans-serif;
+    background-image: url("../assets/fondo-papel.jpg");
+    line-height: 0;
+    display: flex;
+}
