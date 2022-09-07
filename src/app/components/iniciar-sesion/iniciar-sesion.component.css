@@ -1,9 +1,89 @@
-#formulario{
-    background-color: lightgrey;
-    padding: 15px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+.demo-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444546;
+}
+
+.row {
+    background-image: linear-gradient(to top, #909497 0%, #566573 100%);
+}
+
+.image-size-small{
+width:140px;
+margin:0 auto;	
+}
+.image-size-small img{
+width:140px;
+margin-bottom:-70px;
+border: 2px solid black;	
+}
+
+.btn-lg {
+    padding: 12px 26px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+::placeholder {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.form-control-lg {
+    font-size: 16px;
+    padding: 25px 20px;
+}
+
+.font-500 {
+    font-weight: 500;
+}
+
+.image-size-small {
+    width: 140px;
+    margin: 0 auto;
+
+}
+
+
+form input[type="email"],
+form input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #444546;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s
+}
+
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    width: 300px;
+    border-color: #2ecc71
+}
+
+input[type="submit"] {
+    border: 0;
+    background: #444546;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+}
+
+form input[type="submit"]:hover {
+    background: #2ecc71
 }

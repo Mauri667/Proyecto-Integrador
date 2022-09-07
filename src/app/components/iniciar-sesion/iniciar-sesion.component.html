@@ -1,32 +1,33 @@
-<div class="container-fluid">
-  <div id="formulario" class="rounded"> 
-  <h1 class="m-5">Iniciar sesión</h1>
-  <form [formGroup]="form" class="m-5">
-      <div class="form-group mb-3">
-        <label for="exampleInputEmail1" class="mb-2">Email:</label>
-        <input [ngClass]="{'is-invalid': Email?.errors && Email?.touched, 'is-valid': !Email?.errors && Email?.touched }" type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div *ngIf="Email?.errors && Email?.touched">
-        <p *ngIf="Email?.hasError('email')" class="text-danger">
-            El formato debe ser válido.
-        </p>
-        <p *ngIf="Email?.hasError('required')" class="text-danger">
-          El email es requerido.
-        </p>
-      </div>
-      </div>
-      <div class="form-group mb-3">
-        <label  for="exampleInputPassword1" class="mb-2">Contraseña:</label>
-        <input [ngClass]="{'is-invalid': Password?.errors && Password?.touched, 'is-valid': !Password?.errors && Password?.touched }" type="password" formControlName="password" class="form-control" id="exampleInputPassword1">
-        <div *ngIf="Password?.errors && Password?.touched">
-          <p *ngIf="Password?.hasError('required')" class="text-danger">
-            La contraseña es requerida.
-          </p>
-          <p *ngIf="Password?.errors?.['minlength']" class="text-danger">
-            La contraseña debe tener 8 o más carateres.
-        </p>
+<div class="demo-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-12 col-md-6 col-s-6 mx-auto">
+        <div class="mb-3 text-center image-size-small position-relative">
+          <img src="../../../assets/boo-logo.png" class="rounded-circle p-2 bg-white">
         </div>
+
+        <div class="bg-white p-3 rounded shadow-lg">
+          <h3 class="mb-2 text-center pt-5 mb-5">Iniciar sesión</h3>
+          <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+            <p class="text-center">Ingrese el email</p>
+            <input name="email" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg mb-3"
+              type="email" placeholder="Email" [(ngModel)]="nombreUsuario" required>
+            <p class="text-center">Ingrese el password</p>
+            <input name="password" id="password" class="form-control form-control-lg" type="password"
+              placeholder="Password" [(ngModel)]="password" required>
+            <p class="m-0 py-4 text-center"><a href="" class="text-muted"></a></p>
+            <input type="submit" name="" value="INGRESO" href="#">
+          </form>
+          <div class="text-center pt-4">
+            <p class="m-0">No tienes cuenta? <a href="" class="text-dark font-weight-bold">Registrarse</a></p>
+          </div>
+        </div>
+
       </div>
-      <button type="submit" class="btn btn-primary mv-2">Enviar</button>
-    </form>
+    </div>
+  </div>
 </div>
-</div>
+
+
+
+

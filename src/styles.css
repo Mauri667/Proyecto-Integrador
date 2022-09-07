@@ -1,3 +1,6 @@
 *{
     font-family: 'Open Sans', sans-serif;
 }
+body{
+    background: linear-gradient(to bottom right, #BDC3C7, white);
+}

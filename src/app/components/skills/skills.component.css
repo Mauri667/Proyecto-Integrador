@@ -2,10 +2,12 @@
     display: flex;
     align-items: center;
 }
-.container{
+.container-fluid{
     display: flex;
+    flex-direction: row;
     align-content: center;
-    padding: 30px;
+    padding: 20px;
+    justify-content: space-evenly;
 }
 
 #progreso{

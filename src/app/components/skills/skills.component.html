@@ -1,94 +1,100 @@
 <div class="row">
-    <h1>Hard skills</h1>
-    <div class="container" id="progreso">
+  <div>
+  <h1>Hard skills</h1>
+  <div class="container-fluid" id="progreso">
     <div class="col-lg-4 col-sm-4">
-        <circle-progress
-      [percent]="85"
-      [radius]="50"
-      [showUnits]="false"
-      [showSubtitle]="false"
-      [title]="'CSS'"
-      [outerStrokeWidth]="15"
-      [innerStrokeWidth]="0"
-      [outerStrokeColor]="'#3CB371'"
-      [innerStrokeColor]="'#3CB371'"
-      [animation]="true"
-      [animationDuration]="500">
-    </circle-progress>
- </div>
- <div class="col-lg-4 col-sm-4">
-    <circle-progress
-  [percent]="80"
-  [radius]="50"
-  [showUnits]="false"
-  [showSubtitle]="false"
-  [title]="'HTML'"
-  [outerStrokeWidth]="15"
-  [innerStrokeWidth]="0"
-  [outerStrokeColor]="'#3CB371'"
-  [innerStrokeColor]="'#C7E596'"
-  [animation]="true"
-  [animationDuration]="500">
-</circle-progress>
+      <circle-progress [percent]="85" [radius]="50" [showUnits]="false" [showSubtitle]="false" [title]="'CSS'"
+        [outerStrokeWidth]="15" [innerStrokeWidth]="0" [outerStrokeColor]="'#3CB371'" [innerStrokeColor]="'#3CB371'"
+        [animation]="true" [animationDuration]="500" [imageSrc]="'../../../assets/iconos/CSS.png'" [showImage]="true"
+        [imageWidth]="65" [imageHeight]="65">
+      </circle-progress>
+      <p>CSS</p>
+    </div>
+    <div class="col-lg-4 col-sm-4">
+      <circle-progress [percent]="70" [radius]="50" [showUnits]="false" [showSubtitle]="false" [title]="'JS'"
+        [outerStrokeWidth]="15" [innerStrokeWidth]="0" [outerStrokeColor]="'#3CB371'" [innerStrokeColor]="'#3CB371'"
+        [animation]="true" [animationDuration]="500" [imageSrc]="'../../../assets/iconos/js.png'" [showImage]="true"
+        [imageWidth]="65" [imageHeight]="65">
+      </circle-progress>
+      <p>JavaScript</p>
+    </div>
+    <div class="col-lg-4 col-sm-4">
+      <circle-progress [percent]="80" [radius]="50" [showUnits]="false" [showSubtitle]="false" [title]="'HTML'"
+        [outerStrokeWidth]="15" [innerStrokeWidth]="0" [outerStrokeColor]="'#3CB371'" [innerStrokeColor]="'#C7E596'"
+        [animation]="true" [animationDuration]="500" [imageSrc]="'../../../assets/iconos/html.png'" [showImage]="true"
+        [imageHeight]="65" [imageWidth]="65">
+      </circle-progress>
+      <p>HTML</p>
+    </div>
+  </div>
+  <div class="container-fluid" id="progreso">
+    <div class="col-lg-6 col-sm-6">
+      <circle-progress [percent]="70" [radius]="50" [showUnits]="false" [showSubtitle]="false" [title]="'TypeScript'"
+        [outerStrokeWidth]="15" [innerStrokeWidth]="0" [outerStrokeColor]="'#3CB371'" [animation]="true"
+        [animationDuration]="300" [showImage]="true" [imageSrc]="'../../../assets/iconos/TS.png'" [imageHeight]="65"
+        [imageWidth]="65">
+      </circle-progress>
+      <p>
+        TypeScript
+      </p>
+    </div>
+    <div class="col-lg-6 col-sm-6">
+      <circle-progress [percent]="80" [radius]="50" [showUnits]="false" [showSubtitle]="false" [title]="'Java'"
+        [outerStrokeWidth]="15" [innerStrokeWidth]="0" [outerStrokeColor]="'#3CB371'" [innerStrokeColor]="'#3CB371'"
+        [animation]="true" [animationDuration]="500" [imageSrc]="'../../../assets/iconos/java.png'" [showImage]="true"
+        [imageWidth]="65" [imageHeight]="65">
+      </circle-progress>
+      <p>Java</p>
+    </div>
+  </div>
 </div>
-<div class="col-lg-4 col-sm-4">
-    <circle-progress
-  [percent]="70"
-  [radius]="50"
-  [showUnits]="false"
-  [showSubtitle]="false"
-  [title]="'Angular'"
-  [outerStrokeWidth]="15"
-  [innerStrokeWidth]="0"
-  [outerStrokeColor]="'#3CB371'"
-  [animation]="true"
-  [animationDuration]="300">
-</circle-progress>
-</div>
-</div>
-<h1>Soft skills</h1>
-<div class="container" id="progreso">
-<div class="col-lg-4 col-sm-4">
-    <circle-progress
-  [percent]="90"
-  [radius]="50"
-  [showUnits]="false"
-  [showSubtitle]="false"
-  [title]="'Responsabilidad'"
-  [outerStrokeWidth]="15"
-  [innerStrokeWidth]="0"
-  [outerStrokeColor]="'#3CB371'"
-  [animation]="true"
-  [animationDuration]="500">
-</circle-progress>
-</div>
-<div class="col-lg-4 col-sm-4">
-    <circle-progress
-  [percent]="82"
-  [radius]="50"
-  [showUnits]="false"
-  [showSubtitle]="false"
-  [title]="'Autogestión'"
-  [outerStrokeWidth]="15"
-  [innerStrokeWidth]="0"
-  [outerStrokeColor]="'#3CB371'"
-  [animation]="true"
-  [animationDuration]="500">
-</circle-progress>
-</div>
-<div class="col-lg-4 col-sm-4">
-    <circle-progress
-  [percent]="86"
-  [radius]="50"
-  [showUnits]="false"
-  [showSubtitle]="false"
-  [title]="'Liderazgo'"
-  [outerStrokeWidth]="15"
-  [innerStrokeWidth]="0"
-  [outerStrokeColor]="'#3CB371'"
-  [animation]="true"
-  [animationDuration]="500">
-</circle-progress>
-</div>
+<div>
+  <h1>Soft skills</h1>
+  <div class="container-fluid" id="progreso">
+    <div class="col-lg-4 col-sm-4">
+      <circle-progress [percent]="90" [radius]="50" [showUnits]="false" [showSubtitle]="false"
+        [title]="'Responsabilidad'" [titleFontSize]="'15'" [outerStrokeWidth]="15" [innerStrokeWidth]="0"
+        [outerStrokeColor]="'#3CB371'" [animation]="true" [animationDuration]="500"
+        [imageSrc]="'../../../assets/iconos/responsabilidad.png'" [showImage]="true" [imageHeight]="65"
+        [imageWidth]="65">
+      </circle-progress>
+      <p>Responsabilidad</p>
+    </div>
+    <div class="col-lg-4 col-sm-4">
+      <circle-progress [percent]="82" [radius]="50" [showUnits]="false" [showSubtitle]="false"
+        [title]="'Trabajo en equipo'" [outerStrokeWidth]="15" [innerStrokeWidth]="0" [outerStrokeColor]="'#3CB371'"
+        [animation]="true" [animationDuration]="500" [showImage]="true" [imageSrc]="'../../../assets/iconos/equipo.png'"
+        [imageHeight]="65" [imageWidth]="65">
+      </circle-progress>
+      <p>Trabajo en equipo</p>
+    </div>
+    <div class="col-lg-4 col-sm-4">
+      <circle-progress [percent]="86" [radius]="50" [showUnits]="false" [showSubtitle]="false" [title]="'problemas'"
+        [outerStrokeWidth]="15" [innerStrokeWidth]="0" [outerStrokeColor]="'#3CB371'" [animation]="true"
+        [animationDuration]="500" [showImage]="true" [imageSrc]="'../../../assets/iconos/problemas.png'"
+        [imageHeight]="65" [imageWidth]="65">
+      </circle-progress>
+      <p>Resolución de problemas</p>
+    </div>
+  </div>
+  <div class="container-fluid" id="progreso">
+
+ <div class="col-lg-6 col-sm-6">
+      <circle-progress [percent]="86" [radius]="50" [showUnits]="false" [showSubtitle]="false" [title]="'compromiso'"
+        [outerStrokeWidth]="15" [innerStrokeWidth]="0" [outerStrokeColor]="'#3CB371'" [animation]="true"
+        [animationDuration]="500" [showImage]="true" [imageSrc]="'../../../assets/iconos/compromiso.png'"
+        [imageHeight]="65" [imageWidth]="65">
+      </circle-progress>
+      <p>Compromiso</p>
+    </div>
+    <div class="col-lg-6 col-sm-6">
+      <circle-progress [percent]="86" [radius]="50" [showUnits]="false" [showSubtitle]="false" [title]="'tiempo'"
+        [outerStrokeWidth]="15" [innerStrokeWidth]="0" [outerStrokeColor]="'#3CB371'" [animation]="true"
+        [animationDuration]="500" [showImage]="true" [imageSrc]="'../../../assets/iconos/tiempo.png'"
+        [imageHeight]="65" [imageWidth]="65">
+      </circle-progress>
+      <p>Gestión del tiempo</p>
+    </div>
+  </div>
 </div>
 </div>
