@@ -17,6 +17,11 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { interceptorProvider } from './servicios/interceptor-service';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { EditeducacionComponent } from './components/educacion/editeducacion.component';
+import { NewEducacionComponent } from './components/educacion/new-educacion.component';
 
 
 @NgModule({
@@ -34,6 +39,10 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     IniciarSesionComponent,
     PortfolioComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
+    EditeducacionComponent,
+    NewEducacionComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +52,9 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [
+    interceptorProvider,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

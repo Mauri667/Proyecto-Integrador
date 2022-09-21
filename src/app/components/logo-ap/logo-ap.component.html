@@ -1,7 +1,8 @@
-<div class="row">
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2">
     <div class="col-lg-3 col-md-3 col-s-3">
-      <button type="button" class="btn btn-secondary" (click)="login()">INGRESO</button>
+      <button type="button" class="btn btn-secondary" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+      <button type="button" class="btn btn-secondary" (click)="onLogout()" *ngIf="isLogged">CERRAR SESIÓN</button>
     </div>
     <div class="col-lg-6 col-md-6 col-s-6" id="logo">
       <a class="navbar-brand"
@@ -26,6 +27,6 @@
       </div>
     </div>
   </nav>
-</div>
+
 
 

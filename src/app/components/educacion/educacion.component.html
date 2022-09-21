@@ -1,43 +1,32 @@
-<div class="row">
-  <div class="container">
-    <h1>Educación</h1>
-    <div class="row">
-  <div id="Educacion" class="col-lg-10 col-sm-10 col-xs-10">
-    <ul>
-        <li>
-            <h1>Bachiller en ciencias naturales</h1></li>
-            <h4>Escuela de educación secundaria n°5 "Dr. René Favaloro", Monte Grande.</h4>
-            <p>2015</p>
-     </ul>
-  </div>
-  <div class="col-lg-2 col-sm-2 col-xs2">
-    <img src="">
-  </div>
-  <div id="Educacion"class="col-lg-10 col-sm-10 col-xs-10">
-    <ul>
-      <li>
-        <h1>Bioquímica</h1>  
-        </li>
-          <h4>Universidad de Buenos Aires, Capital Federal.</h4>
-          <p>2016 a 2018</p>
-    </ul>
-  </div>
-  <div class="col-lg-2 col-sm-2 col-xs2">
-    <img id="LogoEducacion" class="img-fluid" src="../../../assets/educacion/bioquimicauba.png">
-  </div>
-  <div id="Educacion" class="col-lg-10 col-sm-10 col-xs-10">
-      <ul>
-        <li>
-            <h1>Profesorado en Química </h1>
-        </li>
-            <h4>Instituto de Formación Técnica y Docente n° 35, Monte Grande</h4>
-            <p>2020 - actualidad</p>
-      </ul>
-    </div>
-    <div class="col-lg-2 col-sm-2 col-xs-2">
-      <img id="LogoEducacion" class="img-fluid"  src="../../../assets/educacion/35Logo_chico.jpg">
-    </div>
-  </div>
+<div class="container-fluid p-4">
+  <h1>Educacion</h1>
+  <div class="row">
+    <div class="d-flex justify-content-center p-2">
+    <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+      Añadir educacion
+  </button>
 </div>
-
-</div>
+      <div class="container educacion rounded" *ngFor="let Educacion of edu">
+          <div>
+            <h4>{{Educacion.nombreEdu}}</h4>
+          </div>
+          <div>
+            <p>IMAGEN </p>
+          </div>
+          <div>
+            <p>{{Educacion.descripcionEdu}}</p>
+          </div>
+          <div>
+            <p>{{Educacion.fechaEdu}}</p>
+          </div>
+          <div *ngIf="isLogged" class="container botones d-flex justify-content-end">
+            <div><button class="btn btn-secondary" id="editar"
+              routerLink="/editedu/{{Educacion.id}}">
+              <i class="fas fa-pen"></i></button></div>
+          <div><button class="btn btn-danger" id="borrar"
+              (click)="delete(Educacion.id)">
+              <i class="fas fa-trash"></i></button>
+          </div>
+        </div>
+          </div>
+        </div>
