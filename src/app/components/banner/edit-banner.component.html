@@ -1,0 +1,9 @@
+<form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+    <div class="form-group">
+        <label for="nombreE">URL del banner</label>
+        <input type="text" class="form-control" id="banner" name="banner" [(ngModel)]="persona.bannerURL" required>
+    </div>
+    <button class="btn btn-primary">
+        Actualizar
+    </button>
+</form>

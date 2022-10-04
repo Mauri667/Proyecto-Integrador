@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ExperienciaService {
-  URL = 'http://localhost:8080/explab/';
+  URL = 'https://backmauri.herokuapp.com/explab/';
 
   constructor(private httpClient: HttpClient) { }
 

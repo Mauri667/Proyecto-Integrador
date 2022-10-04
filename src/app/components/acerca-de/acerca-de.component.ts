@@ -9,7 +9,8 @@ import { TokenService } from 'src/app/servicios/token/token.service';
   styleUrls: ['./acerca-de.component.css']
 })
 export class AcercaDeComponent implements OnInit {
-  persona: persona = new persona ('','','','','');
+  
+  persona: persona = new persona ('','','','','','');
 
   constructor(public personaService: PersonaService, private tokenService: TokenService) { }
 
@@ -29,6 +30,17 @@ export class AcercaDeComponent implements OnInit {
     this.personaService.getPersona().subscribe(data => {this.persona=data})
   }
 
+  delete(id?: number) {
+    if (id != undefined) {
+      this.personaService.delete(id).subscribe(
+        data => {
+          this.cargarPersona();
+        }, err => {
+          alert("No se pudo borrar");
+        }
+      )
+    }
+  }
 
 
 
