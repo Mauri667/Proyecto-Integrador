@@ -7,17 +7,14 @@
 }
 
 .row {
-    background-image: linear-gradient(to top, #909497 0%, #566573 100%);
+    background-image: linear-gradient(to top, #909497 0%, #34495E 100%);
 }
 
-.image-size-small{
-width:140px;
-margin:0 auto;	
-}
+
 .image-size-small img{
+margin-top: 10%;
 width:140px;
-margin-bottom:-70px;
-border: 2px solid black;	
+margin-bottom:-75px;
 }
 
 .btn-lg {
@@ -56,7 +53,7 @@ form input[type="password"] {
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 2px solid #444546;
+    border: 2px solid #34495E;
     padding: 10px 10px;
     width: 250px;
     outline: none;
@@ -67,12 +64,12 @@ form input[type="password"] {
 form input[type="email"]:focus,
 form input[type="password"]:focus {
     width: 300px;
-    border-color: #2ecc71
+    border-color: #1ABC9C
 }
 
 input[type="submit"] {
     border: 0;
-    background: #444546;
+    background: #34495E;
     display: block;
     margin: 20px auto;
     text-align: center;
@@ -85,5 +82,5 @@ input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background: #2ecc71
+    background: #1ABC9C;
 }

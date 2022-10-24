@@ -9,7 +9,7 @@ import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { SkillsComponent } from './components/skills/skills.component';
+import { SkillsComponent } from './components/skills/softSkills/skills.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
@@ -24,8 +24,11 @@ import { EditeducacionComponent } from './components/educacion/editeducacion.com
 import { NewEducacionComponent } from './components/educacion/new-educacion.component';
 import { EditBannerComponent } from './components/banner/edit-banner.component';
 import { EditAcercadeComponent } from './components/acerca-de/edit-acercade.component';
-import { NewSkillComponent } from './components/skills/new-skill.component';
-import { EditSkillComponent } from './components/skills/edit-skill.component';
+import { HardSkillsComponent } from './components/skills/hardSkills/hard-skills.component';
+import { NewSkillComponent } from './components/skills/softSkills/new-skill.component';
+import { EditSkillComponent } from './components/skills/softSkills/edit-skill.component';
+import { NewHskillComponent } from './components/skills/hardSkills/new-hskill.component';
+import { EditHskillComponent } from './components/skills/hardSkills/edit-hskill.component';
 
 
 @NgModule({
@@ -51,6 +54,9 @@ import { EditSkillComponent } from './components/skills/edit-skill.component';
     EditAcercadeComponent,
     NewSkillComponent,
     EditSkillComponent,
+    HardSkillsComponent,
+    NewHskillComponent,
+    EditHskillComponent,
   ],
   imports: [
     BrowserModule,

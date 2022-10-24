@@ -1,0 +1,34 @@
+<div class="container">
+    <h1>Hard skills</h1> <button type="button" class="btn btn-dark" routerLink="/nuevahards" *ngIf="isLogged">
+      Añadir Hard Skill
+  </button>
+    <div class="container-fluid" id="progreso">
+      <div class="col-lg-4 col-sm-4 progreso" *ngFor="let HSkills of hskill">
+        <circle-progress
+          [percent]="(HSkills.porcentajeH)"
+          [radius]="50"
+          [showUnits]="false" 
+          [showSubtitle]="false"
+          [title]="(HSkills.nombreH)"
+          [showTitle]="true"
+          [outerStrokeWidth]="15" 
+          [innerStrokeWidth]="0" 
+          [outerStrokeColor]="'#3CB371'"
+          [innerStrokeColor]="'#3CB371'"
+          [animation]="true" 
+          [animationDuration]="500" 
+          [imageSrc]=""
+          [showImage]="false"
+          [imageWidth]="65"
+          [imageHeight]="65">
+        </circle-progress>
+        <p>{{HSkills.nombreH}}</p><div><button class="btn btn-secondary" id="editar"
+          routerLink="/ediths/{{HSkills.id}}">
+          <i class="fas fa-pen"></i></button></div>
+      <div><button class="btn btn-danger" id="borrar"
+          (click)="delete(HSkills.id)">
+          <i class="fas fa-trash"></i></button>
+      </div>
+      </div>
+  </div>
+  <div>

@@ -1,0 +1,26 @@
+.row{
+    display: flex;
+    align-items: center;
+}
+.container-fluid{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+#progreso{
+    text-align: center;
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+}
+
+.progreso:hover{
+    -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
