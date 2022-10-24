@@ -4,11 +4,11 @@
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
                     <label for="nombre">Skill</label>
-                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="hskill.nombre" required>
+                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="hskill.nombreH" required>
                 </div>
                 <div class="form-group">
                     <label for="descripcionE">Título</label>
-                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="hskill.porcentaje" required>
+                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="hskill.porcentajeH" required>
                 </div>
                 <button class="btn btn-primary">
                     Actualizar
