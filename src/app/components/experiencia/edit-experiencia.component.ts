@@ -11,7 +11,7 @@ import { ExperienciaService } from 'src/app/servicios/Experiencia/experiencia.se
 export class EditExperienciaComponent implements OnInit {
 
   expLab: Experiencia = null;
-
+ 
   constructor(private ExperienciaService: ExperienciaService, private activatedRouter: ActivatedRoute,
     private router: Router) { }
 

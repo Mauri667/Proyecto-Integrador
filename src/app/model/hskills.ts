@@ -1,11 +1,11 @@
 export class Hskills {
     id?: number;
-    nombreH: string;
-    porcentajeH: number;
+    nombre: string;
+    porcentaje: number;
 
 
-    constructor(nombreH: string, porcentajeH: number) {
-        this.nombreH = nombreH;
-        this.porcentajeH = porcentajeH;
+    constructor(nombre: string, porcentaje: number) {
+        this.nombre = nombre;
+        this.porcentaje = porcentaje;
     }
 }

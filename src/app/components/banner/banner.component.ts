@@ -10,7 +10,7 @@ import { TokenService } from 'src/app/servicios/token/token.service';
 })
 export class BannerComponent implements OnInit {
 
-  persona: persona = new persona('', '', '', '', '','');
+  persona: persona = null
 
 
   constructor(public personaService: PersonaService, private tokenService: TokenService) { }
@@ -26,7 +26,7 @@ export class BannerComponent implements OnInit {
     }
   }
   cargarPersona(): void {
-    this.personaService.getPersona().subscribe(data => { this.persona = data })
+    this.personaService.detail(1).subscribe(data => { this.persona = data })
   }
 
 }

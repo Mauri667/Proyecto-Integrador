@@ -9,8 +9,8 @@ import { HSkillsService } from 'src/app/servicios/skills/Hskills.service';
   styleUrls: ['./new-hskill.component.css']
 })
 export class NewHskillComponent implements OnInit {
-  nombreH: string = '';
-  porcentajeH: number;
+  nombre: string = '';
+  porcentaje: number;
 
   constructor(private hskillService: HSkillsService, private router:Router) { }
 
@@ -18,7 +18,7 @@ export class NewHskillComponent implements OnInit {
   }
 
   onCreate(): void {
-    const hskill = new Hskills(this.nombreH, this.porcentajeH);
+    const hskill = new Hskills(this.nombre, this.porcentaje);
     this.hskillService.save(hskill).subscribe(
       data => {
         alert("Skill añadida");

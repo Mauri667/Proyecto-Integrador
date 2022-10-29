@@ -1,15 +1,21 @@
 <div class="container">
-    <h1>Proyectos realizados</h1>
-    <div class="row">
-        <div class="col-lg-5 col-sm-12" id="contenido">
-            <div class="col-lg-12 col-sm-12 p-2">
-                <h2 >Portfolio web</h2>
-            </div>
-            <h5>Portfolio realizado para la segunda etapa de Argentina Programa utilizando Angular, SpringBoot y MySQL </h5>
-            <a class="link-secondary"href="https://github.com/Mauri667/Proyecto-Integrador" target="_blank">repositorio en GitHub</a>
-        </div>
-        <div class="col-lg-7 col-sm-12 col-md-12" id="imagenP">
-           <img class="img-fluid" src="../../../assets/Portfolio web.PNG" alt="Portfolio">
-        </div>
+    <h1>Proyectos realizados
+        <button type="button" class="btn btn-dark" routerLink="/nuevoProyecto" *ngIf="isLogged">
+            Añadir proyecto
+        </button>
+    </h1>
+</div>
+<div class="container" *ngFor="let proyectos of proyectos">
+    <div>
+        {{proyectos.titulo}}
+    </div>
+    <div>
+        {{proyectos.descripcionP}}
+    </div>
+    <div>
+        <a href={{proyectos.link}}>Repositorio en GitHub</a>
+    </div>
+    <div>
+        <img src={{proyectos.imagen}} alt="imagen">
     </div>
 </div>

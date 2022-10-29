@@ -5,11 +5,11 @@
     <div class="container-fluid" id="progreso">
       <div class="col-lg-4 col-sm-4 progreso" *ngFor="let HSkills of hskill">
         <circle-progress
-          [percent]="(HSkills.porcentajeH)"
+          [percent]="(HSkills.porcentaje)"
           [radius]="50"
           [showUnits]="false" 
           [showSubtitle]="false"
-          [title]="(HSkills.nombreH)"
+          [title]="(HSkills.nombre)"
           [showTitle]="true"
           [outerStrokeWidth]="15" 
           [innerStrokeWidth]="0" 
@@ -22,7 +22,7 @@
           [imageWidth]="65"
           [imageHeight]="65">
         </circle-progress>
-        <p>{{HSkills.nombreH}}</p><div><button class="btn btn-secondary" id="editar"
+        <p>{{HSkills.nombre}}</p><div><button class="btn btn-secondary" id="editar"
           routerLink="/ediths/{{HSkills.id}}">
           <i class="fas fa-pen"></i></button></div>
       <div><button class="btn btn-danger" id="borrar"

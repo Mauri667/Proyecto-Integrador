@@ -4,14 +4,14 @@
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <div class="form-group">
                     <label for="nombre">Skill</label>
-                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombreH" required>
+                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombre" required>
                 </div>
                 <div class="form-group">
                     <label for="descripcionE">Porcentaje</label>
-                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="porcentajeH" required>
+                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="porcentaje" required>
                 </div>
                 <button class="btn btn-primary">
-                    Agregar educación
+                    Agregar skill
                 </button>
             </form>
         </div>
